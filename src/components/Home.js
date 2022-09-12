@@ -1,6 +1,8 @@
 import { useNavigate, Link } from "react-router-dom";
 import { useContext } from "react";
 import AuthContext from "../context/AuthProvider";
+import * as React from 'react';
+import Button from '@mui/material/Button';
 
 const Home = () => {
     const { setAuth } = useContext(AuthContext);
@@ -17,7 +19,7 @@ const Home = () => {
         <section>
             <h1>Home</h1>
             <br />
-            <p>You are logged in!</p>
+            <p>You are logged in!</p> <Button variant="contained">Hello World</Button>
             <br />
             <Link to="/editor">Go to the Editor page</Link>
             <br />
